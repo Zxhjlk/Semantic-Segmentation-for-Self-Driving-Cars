@@ -33,7 +33,7 @@ This project aims to produce a deep learning model that is capable of generating
 </p>
 
 ## Data
-The data was created as part of the Lyft Udacity Challenge and is hosted on Kaggle. It is made up of images taken of the road from the perspective of a driver. The images are made up of a combination of roads, people, signage, cars, etc. 
+The data was created as part of the Lyft Udacity Challenge and is hosted on Kaggle. It is made up of images taken from the software CARLA, an open-source autonomous driving simulator. The images are made up of a combination of roads, people, signage, cars, etc. 
 * [Kaggle](https://www.kaggle.com/datasets/kumaresanmanickavelu/lyft-udacity-challenge/data) 
 * [Udacity](https://www.udacity.com/)
 
