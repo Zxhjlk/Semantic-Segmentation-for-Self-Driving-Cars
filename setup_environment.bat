@@ -14,8 +14,7 @@ call conda create -n nn_cars python=3.9 -y
 
 :: Activate the environment and install packages
 call conda activate nn_cars
-call conda install numpy scikit-learn tensorflow matplotlib ipykernel -y
-call pip install opencv-python 
+call conda install numpy scikit-learn tensorflow matplotlib ipykernel imageio -y
 
 echo Environment nn_cars created
 pause
