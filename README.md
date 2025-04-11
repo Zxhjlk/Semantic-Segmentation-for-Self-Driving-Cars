@@ -27,35 +27,40 @@ Eddie
 <h3 align="center">Semantic Segmentation for Self Driving Cars</h3>
 </div>
 <p align='center'>
-This project aims to produce a deep learning model that is capable of generating segmentation masks from road imagery. By outlining various elements within street imagery(e.g., roads, signage, people), it will allow a self driving vehicle to achieve a better understanding of its surroundings. 
+This project aims to produce a deep learning model that is capable of generating segmentation masks from road imagery. By outlining various elements within street imagery(e.g., roads, signage, people), it will allow a self driving vehicle to achieve a better understanding of its surroundings.
+</p>
 <p align='center'>
-<img src='images/.png' width='600'>
+<img src='images/input.png' width='600'> <br>
+Image shows an example input image and the accompanying mask with class labels
 </p>
 
 ## Data
 The data was created as part of the Lyft Udacity Challenge and is hosted on Kaggle. It is made up of images taken from the software CARLA, an open-source autonomous driving simulator. The images are made up of a combination of roads, people, signage, cars, etc. 
 * [Kaggle](https://www.kaggle.com/datasets/kumaresanmanickavelu/lyft-udacity-challenge/data) 
-* [Udacity](https://www.udacity.com/)
+* [Udacity](https://www.udacity.com/)  
+
+The images are taken from an older version of CARLA, which only had 13 class labels  
+<img src='images/labels.png' width='250'>
+
+## Model Architecture
 
 ## Results
 
 ### Result1
-<img src='images/.png' width='800'>
+<img src='images/baseline1.png' width='800'>
+
+<img src='images/baseline2.png' width='800'>
 
 ### Result2
-<img src='images/.png' width='800'>
+<img src='images/transpose1.png' width='800'>
+
+
+<img src='images/transpose2.png' width='800'>
 
 ### Result3
-<img src='images/.png' width='800'>
+<img src='images/upsample1.PNG' width='800'>
 
-### Result4
-<img src='images/.png' width='800'>
-
-### Result5
-<img src='images/.PNG' width='800'>
-
-### Result6
-<img src='images/.PNG' width='800'>
+<img src='images/upsample2.PNG' width='800'>
 
 
 
