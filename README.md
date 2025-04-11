@@ -13,6 +13,7 @@ Eddie
     <li>
       <a href="#business-problem">Business Problem</a>
     </li>
+    <li> <a href="#getting-started">Getting Started</a></li>
     <li><a href="#data">Data</a></li>
     <li><a href="#results">Results</a></li>
     <li><a href="#conclusions">Conclusions</a></li>
@@ -33,6 +34,34 @@ This project aims to produce a deep learning model that is capable of generating
 <img src='images/input.png' width='600'> <br>
 Image shows an example input image and the accompanying mask with class labels
 </p>
+
+## Getting Started
+
+To get a local copy up and running, follow these steps
+
+### Prerequisites
+ * Fork repository
+    * https://github.com/Zxhjlk/Semantic-Segmentation-for-Self-Driving-Cars/fork
+ * GitHub Desktop: used to assess repository for cloning, branching, etc.
+	* Download at https://desktop.github.com/ 
+	* Login and set repository to forked version  
+  
+    **OR**
+    
+* Clone repository through Git Bash:
+	```sh
+  $ git clone {forked repository}
+  ```
+ * Conda
+ 	* Check if Conda is installed in command prompt
+	  ```sh
+	  conda list
+	  ```
+ 	* Follow instructions on this website to download: https://www.anaconda.com/download/success
+
+### Installation
+- Run setup_environment.bat from base directory
+- Set kernel as **nn_cars** before running jupyter notebook
 
 ## Data
 The data was created as part of the Lyft Udacity Challenge and is hosted on Kaggle. It is made up of images taken from the software CARLA, an open-source autonomous driving simulator. The images are made up of a combination of roads, people, signage, cars, etc. 
