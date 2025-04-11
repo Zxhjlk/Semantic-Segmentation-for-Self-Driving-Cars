@@ -13,8 +13,8 @@ Eddie
     <li>
       <a href="#business-problem">Business Problem</a>
     </li>
-    <li> <a href="#getting-started">Getting Started</a></li>
     <li><a href="#data">Data</a></li>
+    <li> <a href="#getting-started">Getting Started</a></li>
     <li><a href="#results">Results</a></li>
     <li><a href="#conclusions">Conclusions</a></li>
     <li><a href="#next-steps">Next Steps</a></li>
@@ -34,6 +34,15 @@ This project aims to produce a deep learning model that is capable of generating
 <img src='images/input.png' width='600'> <br>
 Image shows an example input image and the accompanying mask with class labels
 </p>
+
+## Data
+The data was created as part of the Lyft Udacity Challenge and is hosted on Kaggle. It is made up of images taken from the software CARLA, an open-source autonomous driving simulator. The images are made up of a combination of roads, people, signage, cars, etc. 
+* [Kaggle](https://www.kaggle.com/datasets/kumaresanmanickavelu/lyft-udacity-challenge/data) 
+* [Udacity](https://www.udacity.com/)  
+
+The images are taken from an older version of CARLA, which only had 13 class labels  
+<img src='images/labels.png' width='250'>
+
 
 ## Getting Started
 
@@ -62,14 +71,6 @@ To get a local copy up and running, follow these steps
 ### Installation
 - Run setup_environment.bat from base directory
 - Set kernel as **nn_cars** before running jupyter notebook
-
-## Data
-The data was created as part of the Lyft Udacity Challenge and is hosted on Kaggle. It is made up of images taken from the software CARLA, an open-source autonomous driving simulator. The images are made up of a combination of roads, people, signage, cars, etc. 
-* [Kaggle](https://www.kaggle.com/datasets/kumaresanmanickavelu/lyft-udacity-challenge/data) 
-* [Udacity](https://www.udacity.com/)  
-
-The images are taken from an older version of CARLA, which only had 13 class labels  
-<img src='images/labels.png' width='250'>
 
 ## Model Architecture
 
