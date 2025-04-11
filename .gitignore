@@ -1,3 +1,6 @@
 /data
 
 *.pyc
+
+#Stop tracking after initial push, too large
+/notebooks/models
