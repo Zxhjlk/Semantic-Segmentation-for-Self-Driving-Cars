@@ -15,6 +15,11 @@ call conda create -n nn_cars python=3.9 -y
 :: Activate the environment and install packages
 call conda activate nn_cars
 call conda install numpy scikit-learn tensorflow matplotlib ipykernel imageio -y
+call pip install requests gdown
 
 echo Environment nn_cars created
+:: Call python script to download data
+echo Downloading data
+call python3 fetchdata.py
+echo Environment setup complete
 pause
