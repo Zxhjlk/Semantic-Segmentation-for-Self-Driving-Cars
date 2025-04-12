@@ -20,6 +20,6 @@ call pip install requests gdown
 echo Environment nn_cars created
 :: Call python script to download data
 echo Downloading data
-call python3 fetchdata.py
+call python fetchdata.py
 echo Environment setup complete
 pause
