@@ -88,9 +88,9 @@ To get a local copy up and running, follow these steps
 <img src='images/transpose2.png' width='800'>
 
 ### The final model was very similar in the structure of the model to the second model, except it used Upsampling2D plus Conv2D for the deconvolution. While the quality of the mask is pretty similar to the one predicted by the second model, it seems to be doing better with objects farther away. For example, in the second picture, the segmentation of the cars are very similar to the true mask.
-<img src='images/upsample1.PNG' width='800'>
+<img src='images/upsample1.png' width='800'>
 
-<img src='images/upsample2.PNG' width='800'>
+<img src='images/upsample2.png' width='800'>
 
 ### While accuracy is not a great metric for measuring the performance of models performing semantic segmentation, it is handy to get a quick glance at how these models are performing. We can see that they are all performing quite well, with Upsampling2D and Conv2DTranspose having very similar accuracy. However, to properly measure the performance of these models, a different metric will need to be used. 
 <img src='images/accuracy.png' width='800'>
