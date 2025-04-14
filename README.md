@@ -84,7 +84,6 @@ To get a local copy up and running, follow these steps
 ### Result2
 <img src='images/transpose1.png' width='800'>
 
-
 <img src='images/transpose2.png' width='800'>
 
 ### Result3
@@ -92,6 +91,11 @@ To get a local copy up and running, follow these steps
 
 <img src='images/upsample2.PNG' width='800'>
 
+### Result4
+<img src='images/accuracy.png' width='800'>
+
+### Result5
+<img src='images/iou.png' width='800'>
 
 
 ## Conclusions
@@ -102,25 +106,3 @@ To get a local copy up and running, follow these steps
 Further steps
 * Step1
 * Step2
-
-<!-- https://home.aveek.io/GitHub-Profile-Badges/ -->
-
-<!-- LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/Zxhjlk/Phase3Project.svg?style=for-the-badge
-[contributors-url]: https://github.com/Zxhjlk/Phase3Project/graphs/contributors
-[activity-shield]: https://img.shields.io/github/last-commit/Zxhjlk/Phase3Project?style=for-the-badge
-[activity-url]: https://github.com/Zxhjlk/Phase3Project/activity
-
-
-
-[Solidity]: https://img.shields.io/badge/Solidity-363636.svg?style=for-the-badge&logo=Solidity&logoColor=white
-[Solidity-url]: https://soliditylang.org/
-
-[Pytorch]: https://img.shields.io/badge/PyTorch-EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white
-[Pytorch-url]: https://pytorch.org/
-
-[React]: https://img.shields.io/badge/React-61DAFB.svg?style=for-the-badge&logo=React&logoColor=black
-[React-url]: https://react.dev/
-
-[FastAPI]: https://img.shields.io/badge/FastAPI-009688.svg?style=for-the-badge&logo=FastAPI&logoColor=white
-[Fast-url]: https://fastapi.tiangolo.com/
