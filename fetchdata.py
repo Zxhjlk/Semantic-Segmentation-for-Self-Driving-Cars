@@ -16,7 +16,8 @@ def main():
     directory = 'data'
     os.makedirs(directory, exist_ok=True)
 
-    url = 'https://drive.google.com/file/d/1YGAPXhl0ujhJ4Lw3Buz_GbG72mWX2kgJ/view?usp=sharing'
+    #url = 'https://drive.google.com/file/d/1YGAPXhl0ujhJ4Lw3Buz_GbG72mWX2kgJ/view?usp=sharing'
+    url = 'https://drive.google.com/file/d/1XnRHkeNkvPDhbnwW-Jb4Dcn4aQ28ZCgd/view?usp=sharing'
     zip_path = 'data.zip'
     gdown.download(url, zip_path, quiet=False, fuzzy=True)
 
