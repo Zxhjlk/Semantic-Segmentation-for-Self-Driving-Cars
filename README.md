@@ -73,8 +73,6 @@ To get a local copy up and running, follow these steps
 - Run setup_environment.bat from base directory
 - Set kernel as **nn_cars** before running jupyter notebook
 
-## Model Architecture
-
 ## Results
 
 ### These are the masks created by the baseline model. It struggles a great deal at creating a proper mask, not only with small far away objects such as the cars in the first image, but also larger closer objects such as the traffic light in the first image. This model used Conv2DTranspose for denconvolution but lacked features like regularization techniques to aid in learning.
@@ -98,19 +96,15 @@ To get a local copy up and running, follow these steps
 ### Mean Intersection over Union was the main metric used to measure the performance of these model. It measures the overlap between the predicted and true mask, with a higher number meaning a better match between the two. When we look at the models through this metric, they are performing admirably. The order of the models is still the same, though there is a slightly larger gap now between them. Upsampling2D is still the best performing model. It exhibits a similar pattern in both graphs interestingly, where it struggles to learn initially before shooting up in score.
 <img src='images/iou.png' width='800'>
 
-### Upsampling2D is likely performing better than Conv2DTranspose because it separates the upsampling and feature transformation steps, resulting in less artifacting. Generally this issue arises when the kernel size is not divisible by the stride, but even when this is fixed Conv2DTranspose still has a tendency to create artifacts. The picture below shows the difference. Devoncolution referse to Conv2DTranspose whereas resize-convolution refers to Upsampling2D + Conv2d[1]
+### Upsampling2D is likely performing better than Conv2DTranspose because it separates the upsampling and feature transformation steps, resulting in less artifacting. Generally this issue arises when the kernel size is not divisible by the stride, but even when this is fixed Conv2DTranspose still has a tendency to create artifacts. The picture below shows the difference. Devoncolution referse to Conv2DTranspose whereas resize-convolution refers to Upsampling2D + Conv2d.[1]
 <img src='images/artifacts.PNG' width='800'>
 
 
 
-## Conclusions
-* **Conclusion** Conclusion
-
-
 ## Next Steps
 Further steps
-* Step1
-* Step2
+* Use pre-trained models for convolutional steps of semantic segmentation
+* Evolve model to work on video segmentation
 
 ## References
 1. Odena, A., Dumoulin, V., & Olah, C. (2016, October 17). Deconvolution and checkerboard artifacts. Distill. https://distill.pub/2016/deconv-checkerboard/ 
