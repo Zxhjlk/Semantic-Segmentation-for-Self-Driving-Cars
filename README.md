@@ -75,28 +75,34 @@ To get a local copy up and running, follow these steps
 
 ## Results
 
-### These are the masks created by the baseline model. It struggles a great deal at creating a proper mask, not only with small far away objects such as the cars in the first image, but also larger closer objects such as the traffic light in the first image. This model used Conv2DTranspose for denconvolution but lacked features like regularization techniques to aid in learning.
+### These are the masks created by the baseline model. 
+It struggles a great deal at creating a proper mask, not only with small far away objects such as the cars in the first image, but also larger closer objects such as the traffic light in the first image. This model used Conv2DTranspose for denconvolution but lacked features like regularization techniques to aid in learning.  
 <img src='images/baseline1.png' width='800'>
 
 <img src='images/baseline2.png' width='800'>
 
-### The second model greatly improved the structure of the model, adding dropout layers and activation functions to have to model learn more robust features. The generated masks have greatly improved in quality, but it still has some issues with objects farther away. In the second image, it completely misses the top of the car directly infront, and creates poor segmentations for the vehicles further away on the left.
+### The second model greatly improved the structure of the model, adding dropout layers and activation functions to have to model learn more robust features.
+ The generated masks have greatly improved in quality, but it still has some issues with objects farther away. In the second image, it completely misses the top of the car directly infront, and creates poor segmentations for the vehicles further away on the left.  
 <img src='images/transpose1.png' width='800'>
 
 <img src='images/transpose2.png' width='800'>
 
-### The final model was very similar in the structure of the model to the second model, except it used Upsampling2D plus Conv2D for the deconvolution. While the quality of the mask is pretty similar to the one predicted by the second model, it seems to be doing better with objects farther away. For example, in the second picture, the segmentation of the cars are very similar to the true mask.
+### The final model was very similar in the structure of the model to the second model, except it used Upsampling2D plus Conv2D for the deconvolution.
+ While the quality of the mask is pretty similar to the one predicted by the second model, it seems to be doing better with objects farther away. For example, in the second picture, the segmentation of the cars are very similar to the true mask.  
 <img src='images/upsample1.png' width='800'>
 
 <img src='images/upsample2.png' width='800'>
 
-### While accuracy is not a great metric for measuring the performance of models performing semantic segmentation, it is handy to get a quick glance at how these models are performing. We can see that they are all performing quite well, with Upsampling2D and Conv2DTranspose having very similar accuracy. However, to properly measure the performance of these models, a different metric will need to be used. 
+### While accuracy is not a great metric for measuring the performance of models performing semantic segmentation, it is handy to get a quick glance at how these models are performing.
+We can see that they are all performing quite well, with Upsampling2D and Conv2DTranspose having very similar accuracy. However, to properly measure the performance of these models, a different metric will need to be used. 
 <img src='images/accuracy.png' width='800'>
 
-### Mean Intersection over Union was the main metric used to measure the performance of these model. It measures the overlap between the predicted and true mask, with a higher number meaning a better match between the two. When we look at the models through this metric, they are performing admirably. The order of the models is still the same, though there is a slightly larger gap now between them. Upsampling2D is still the best performing model. It exhibits a similar pattern in both graphs interestingly, where it struggles to learn initially before shooting up in score.
+### Mean Intersection over Union was the main metric used to measure the performance of these model. 
+It measures the overlap between the predicted and true mask, with a higher number meaning a better match between the two. When we look at the models through this metric, they are performing admirably. The order of the models is still the same, though there is a slightly larger gap now between them. Upsampling2D is still the best performing model. It exhibits a similar pattern in both graphs interestingly, where it struggles to learn initially before shooting up in score.
 <img src='images/iou.png' width='800'>
 
-### Upsampling2D is likely performing better than Conv2DTranspose because it separates the upsampling and feature transformation steps, resulting in less artifacting. Generally this issue arises when the kernel size is not divisible by the stride, but even when this is fixed Conv2DTranspose still has a tendency to create artifacts. The picture below shows the difference. Devoncolution referse to Conv2DTranspose whereas resize-convolution refers to Upsampling2D + Conv2d.[1]
+### Upsampling2D is likely performing better than Conv2DTranspose because it separates the upsampling and feature transformation steps, resulting in less artifacting. 
+Generally this issue arises when the kernel size is not divisible by the stride, but even when this is fixed Conv2DTranspose still has a tendency to create artifacts. The picture below shows the difference. Devoncolution referse to Conv2DTranspose whereas resize-convolution refers to Upsampling2D + Conv2d.[1]  
 <img src='images/artifacts.PNG' width='800'>
 
 
