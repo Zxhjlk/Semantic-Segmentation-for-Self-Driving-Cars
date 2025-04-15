@@ -29,7 +29,7 @@ Eddie
 <h3 align="center">Semantic Segmentation for Self Driving Cars</h3>
 </div>
 <p align='center'>
-This project aims to produce a deep learning model that is capable of generating segmentation masks from road imagery. By outlining various elements within street imagery(e.g., roads, signage, people), it will allow a self driving vehicle to achieve a better understanding of its surroundings.
+This project aims to produce a deep learning model that is capable of generating segmentation masks from road imagery. By outlining various elements within street imagery(e.g., roads, signage, cars), it will allow a self driving vehicle to achieve a better understanding of its surroundings.
 </p>
 <p align='center'>
 <img src='images/input.png' width='600'> <br>
@@ -76,7 +76,7 @@ To get a local copy up and running, follow these steps
 ## Results
 
 ### These are the masks created by the baseline model. 
-It struggles a great deal at creating a proper mask, not only with small far away objects such as the cars in the first image, but also larger closer objects such as the traffic light in the first image. This model used Conv2DTranspose for denconvolution but lacked features like regularization techniques to aid in learning.  
+It struggles a great deal at creating a proper mask, not only with small far away objects such as the cars in the first image, but also larger closer objects such as the traffic light in the second image. This model used Conv2DTranspose for denconvolution but lacked features like regularization techniques to aid in learning.  
 <img src='images/baseline1.png' width='800'>
 
 <img src='images/baseline2.png' width='800'>
